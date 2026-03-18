@@ -1,0 +1,27 @@
+/* Customizations for the whole document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base styles for body and anchors */
+body {
+  color: #161616;
+}
+
+a {
+  color: #161616;
+}
+
+/* Utility class to hide elements */
+.visually-hidden {
+  display: none;
+}
+
+/* Color accents for specific categories and taglines */
+.card-category {
+  color: #D73953;
+}
+
+.section-tagline {
+  color: #D73953;
+}
