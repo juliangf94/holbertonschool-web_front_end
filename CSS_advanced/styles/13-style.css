@@ -38,24 +38,25 @@ body {
   line-height: var(--line-height-base);
 }
 
-/* Updated Anchor Styles with Pseudo-classes */
+
+/* 1. Target only anchor elements containing a hyperlink */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-/* Target visited state for links with href */
-a[href]:visited {
+/* 2. Target the visited state - Directly after the previous declaration */
+a:visited {
   font-style: italic;
 }
 
-/* Target hover state for links with href */
-a[href]:hover {
+/* 3. Target the hover state - Directly after the visited state */
+a:hover {
   text-decoration: underline;
 }
 
-/* Target active state for links with href */
-a[href]:active {
+/* 4. Target the active state - Directly after the hover state */
+a:active {
   background-color: var(--color-light-grey);
 }
 
