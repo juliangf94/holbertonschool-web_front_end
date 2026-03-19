@@ -635,7 +635,7 @@ ul.row {
 .card-work .card-outer {
   position: relative;
   overflow: hidden;
-
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-outer {
