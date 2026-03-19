@@ -457,12 +457,6 @@ a:active { background-color: var(--color-light-grey); }
   text-decoration: var(--button-text-decoration);
 }
 
-.button:hover {
-  color: var(--button-hover-color);
-  text-decoration: var(--button-hover-text-decoration);
-  background-color: var(--button-hover-background);
-}
-
 /* 5. LAYOUT (CONTAINER & GRID) */
 .container {
   width: 960px;
@@ -641,8 +635,7 @@ ul.row {
 .card-work .card-outer {
   position: relative;
   overflow: hidden;
-  /* Task 32: Transition for the shrink effect */
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
+
 }
 
 .card-work:hover .card-outer {
@@ -650,16 +643,16 @@ ul.row {
 }
 
 .card-work .card-image img {
-    height: 30rem;
+  height: 30rem;
   width: 100%;
   object-fit: cover;
   vertical-align: bottom;
-  /* Task 32: Transition for the zoom effect */
-  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work:hover .card-image img {
   transform: scale(1.2);
+  /* Task 32: Transition for the zoom effect */
+  transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
 .card-work .card-inner {
