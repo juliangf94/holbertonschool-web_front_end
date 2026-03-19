@@ -44,15 +44,18 @@ a[href] {
   text-decoration: none;
 }
 
-a:visited {
+/* Target visited state for links with href */
+a[href]:visited {
   font-style: italic;
 }
 
-a:hover {
+/* Target hover state for links with href */
+a[href]:hover {
   text-decoration: underline;
 }
 
-a:active {
+/* Target active state for links with href */
+a[href]:active {
   background-color: var(--color-light-grey);
 }
 
