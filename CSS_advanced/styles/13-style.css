@@ -39,24 +39,20 @@ body {
 }
 
 
-/* 1. Target only anchor elements containing a hyperlink */
 a[href] {
   color: var(--text-color);
   text-decoration: none;
 }
 
-/* 2. Target the visited state - Directly after the previous declaration */
-a:visited {
+a[href]:visited {
   font-style: italic;
 }
 
-/* 3. Target the hover state - Directly after the visited state */
-a:hover {
+a[href]:hover {
   text-decoration: underline;
 }
 
-/* 4. Target the active state - Directly after the hover state */
-a:active {
+a[href]:active {
   background-color: var(--color-light-grey);
 }
 
